@@ -14,7 +14,7 @@ const UserHeader = ({data}) => {
     localStorage.removeItem('LinkTreeToken');
     router.push('/login');
   };
-  
+
   return (
     <>
         <header className='flex flex-row justify-between items-center'>
@@ -32,7 +32,7 @@ const UserHeader = ({data}) => {
                 </button>
               </Link>
             </div>
-            <Link href={`https://link-bank-server.onrender.com/${handle}`}>
+            <Link href={`/${handle}`}>
               <div className='flex flex-row'> 
                 <div className='inline-flex mr-5 text-right items-center bg-gray-200 px-5 py-2 rounded-lg'>
                   <div className='text-xs md:text-md flex flex-col flex-wrap'>
