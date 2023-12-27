@@ -14,7 +14,7 @@ const UserHeader = ({data}) => {
     localStorage.removeItem('LinkTreeToken');
     router.push('/login');
   };
-
+  
   return (
     <>
         <header className='flex flex-row justify-between items-center'>
