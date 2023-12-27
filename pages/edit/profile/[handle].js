@@ -30,7 +30,7 @@ const handle = () => {
 
     useEffect(() => {
       if(router.query?.handle){
-        fetch(`http://localhost:8080/get/${router.query.handle}`)
+        fetch(`/get/${router.query.handle}`)
         .then(res=>res.json())
         .then(data=>{
           if(data.status === 'error') return toast.error(data.error);
@@ -49,7 +49,7 @@ const handle = () => {
 
     const saveProfile = e =>{
       e.preventDefault();
-      fetch(`http://localhost:8080/save/profile`,{
+      fetch(`https://link-bank-server.onrender.com/save/profile`,{
           method: 'POST',
           headers: {
               'Content-type': 'application/json'
