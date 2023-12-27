@@ -31,7 +31,7 @@ const UserHeaderr = ({data, social}) => {
                 </button>
               </Link>
             </div>
-            <Link href={`https://link-bank-server.onrender.com/${router.query.handle}`}>
+            <Link href={`https://link-bank-server.onrender.com/get/${router.query.handle}`}>
               <div className='flex flex-row'> 
                 <div className='inline-flex mr-5 text-right items-center bg-gray-200 px-5 py-2 rounded-lg'>
                   <div className='text-xs md:text-md flex flex-col flex-wrap'>

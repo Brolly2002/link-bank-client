@@ -6,7 +6,7 @@ const ShareButton = () => {
     const router = useRouter();
 
     const copyLink = () => {
-        navigator.clipboard.writeText(`https://link-bank-server.onrender.com/${router.query.handle}`);
+        navigator.clipboard.writeText(`https://link-bank-server.onrender.com/get/${router.query.handle}`);
         toast('Copied to clipboard');
     }
 
