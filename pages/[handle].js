@@ -22,7 +22,7 @@ const Handle = () => {
   })
 
   useEffect(() => {
-    if(router.query?.handle){
+    if(router.query?.handle) {
       fetch(`https://link-bank-server.onrender.com/get/${router.query.handle}`)
       .then(res=>res.json())
       .then(data=>{
