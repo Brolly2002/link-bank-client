@@ -69,7 +69,7 @@ const handle = () => {
 
     const saveSocials = (e) => {
       e.preventDefault();
-      fetch(`http://localhost:8080/save/socials`,{
+      fetch(`https://link-bank-server.onrender.com/save/socials`,{
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -87,7 +87,7 @@ const handle = () => {
 
     useEffect(()=>{
       if(!localStorage.getItem('LinkTreeToken')) return router.push('/login');
-      fetch(`http://localhost:8080/load/socials`,{
+      fetch(`https://link-bank-server.onrender.com/load/socials`,{
           method: 'POST',
           headers: {
               'Content-type': 'application/json'
