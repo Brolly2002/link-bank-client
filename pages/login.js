@@ -13,7 +13,7 @@ const Apply = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:8080/api/login', {
+    fetch('https://link-bank-server.onrender.com/api/login', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
