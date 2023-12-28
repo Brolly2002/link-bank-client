@@ -55,7 +55,7 @@ const Apply = () => {
             </p>
             <form onSubmit={handleLogin} className='flex flex-col gap-4 text-lg mt-5'>
               <input value={email} onChange={e=>setEmail(e.target.value)} className='shadow-md border-2 px-3 py-2 rounded-md focus:outline-none' type='email' placeholder='Enter Your email' required />
-              <input value={password} onChange={e=>setPassword(e.target.value)} className='shadow-md border-2 px-3 py-2 rounded-md focus:outline-none' type='password' placeholder='Set a password' required />
+              <input value={password} onChange={e=>setPassword(e.target.value)} className='shadow-md border-2 px-3 py-2 rounded-md focus:outline-none' type='password' placeholder='Enter Your password' required />
               <input className='bg-indigo-600 text-white py-2 rounded-lg cursor-pointer' type='submit' value='Login' />
             </form>
           </div>
