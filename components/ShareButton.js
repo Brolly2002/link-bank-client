@@ -1,12 +1,12 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { toast } from 'react-toastify';
+import { toast } from 'react-toastify'
 
 const ShareButton = () => {
     const router = useRouter();
 
     const copyLink = () => {
-        navigator.clipboard.writeText(`https://link-bank-server.onrender.com/get/${router.query.handle}`);
+        navigator.clipboard.writeText(`https://link-bank.netlify.app/${router.query.handle}`);
         toast('Copied to clipboard');
     }
 
